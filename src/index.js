@@ -9,8 +9,8 @@ function Forecast(response) {
     let date = new Date(response.data.time * 1000);
     let iconElement = document.querySelector("#icon");
 
-    iconElement.innerHTML = `<img src="${response.data.condition.icon}
-    http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png">`;
+    iconElement.innerHTML = `<img src="
+    http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png">`;
     timeElement.innerHTML = formatDate(date);
     descriptionElement.innerHTML = response.data.condition.description;
     humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
