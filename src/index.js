@@ -60,9 +60,5 @@ function handleButton(event) {
   
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", handleButton);
-  
-  let currentDateELement = document.querySelector("#time");
-  let currentDate = new Date();
-  
-currentDateELement.innerHTML = formatDate(currentDate);
+
 searchCity("Paris");
