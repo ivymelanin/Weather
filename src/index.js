@@ -18,17 +18,18 @@ function Forecast(response) {
     temperatureElement.innerHTML = temperature;
   }
   
-  function search(event) {
-    event.preventDefault();
-    let searchInputElement = document.querySelector("#search-input");
-    let city = searchInputElement.value;
-  
+  function searchCity(city) {
     let apiKey = "77e54fc3f3o315bb21050ac08t45b6af";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   
     axios.get(apiUrl).then(Forecast);
   }
   
+function handleButton(event) {
+    event.preventDefault();
+    let searchInput = document.querySelector("#search-input");
+    searchCity(searchInput.value);
+  }
   function formatDate(date) {
     let minutes = date.getMinutes();
     let hours = date.getHours();
