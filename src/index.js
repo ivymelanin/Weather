@@ -23,7 +23,7 @@ function Forecast(response) {
     let searchInputElement = document.querySelector("#search-input");
     let city = searchInputElement.value;
   
-    let apiKey = " 77e54fc3f3o315bb21050ac08t45b6af";
+    let apiKey = "77e54fc3f3o315bb21050ac08t45b6af";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   
     axios.get(apiUrl).then(Forecast);
