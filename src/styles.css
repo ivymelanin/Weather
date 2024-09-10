@@ -73,10 +73,10 @@ body {
   
   .current-temperature-icon {
     position: relative;
-    top: -8px;
-    font-size: 40px;
+    
+    font-size: 70px;
     margin-right: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   
   .current-temperature-value {
