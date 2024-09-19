@@ -101,4 +101,3 @@ searchForm.addEventListener("submit", handleButton);
 
 searchCity("Paris");
 
-displayForecast();
