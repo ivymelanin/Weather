@@ -87,7 +87,7 @@ function getForecast(city) {
           <div class="weather-forecast-temp>
             <strong>${Math.round(day.temperature.maximum)}&deg;</strong>
           </div>
-          <div class="weather-forecast-temp>${Math.round(day.temperature,minimum)}&deg;</div>
+          <div class="weather-forecast-temp>${Math.round(day.temperature.minimum)}&deg;</div>
         </div>
         `;
     }
