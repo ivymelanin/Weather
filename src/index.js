@@ -59,7 +59,12 @@ function handleButton(event) {
     let formattedDay = days[day];
     return `${formattedDay} ${hours}:${minutes}`;
   }
+function formatDay(timestamp){
+    let date = new Date(timestamp * 1000);
+    let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
 
+    return days[date.getDay()];
+}
   
 function getForecast(city) {
   let apiKey = "77e54fc3f3o315bb21050ac08t45b6af";
@@ -69,7 +74,6 @@ function getForecast(city) {
 }
 
   function displayForecast(response) {
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = "";
 
   response.data.daily.forEach(function (day, index){
@@ -77,7 +81,7 @@ function getForecast(city) {
       forecastHTML = forecastHTML +
         `
       <div class="weather-forecast-day">
-        <div class="weather-forecast-date">${formattedDay(day.time)}</div>
+        <div class="weather-forecast-date">${formatDay(day.time)}</div>
         <img src="${day.condition.icon_url}" class="weather-forecast-icon" />
         <div class="weather-forecast-temperatures">
           <div class="weather-forecast-temp>
