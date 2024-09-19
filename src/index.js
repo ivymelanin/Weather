@@ -57,7 +57,31 @@ function handleButton(event) {
     let formattedDay = days[day];
     return `${formattedDay} ${hours}:${minutes}`;
   }
-  
+
+  function displayForecast(response) {
+  console.log(response.data);
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+
+  response.data.daily.forEach(function (day, index){
+    if (index < 5) {
+      forecastHTML = forecastHTML +
+        `
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">${formattedDay(day.time)}</div>
+        <img src="${day.condition.icon_url}" class="weather-forecast-icon" />
+        <div class="weather-forecast-temperatures">
+          <div class="weather-forecast-temp>
+            <strong>${Math.round(day.temperature.maximum)}&deg;</strong>
+          </div>
+          <div class="weather-forecast-temp>${Math.round(day.temperature,minimum)}&deg;</div>
+        </div>
+        `
+    
+    }
+  }
+)
+}
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", handleButton);
 
