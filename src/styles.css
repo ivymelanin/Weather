@@ -97,6 +97,7 @@ body {
 }
 .weather-forecast-day{
     display: flex;
+    justify-content: space-arpund;
 }
 .weather-forecast-date{
     text-align: center;
