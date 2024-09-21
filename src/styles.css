@@ -90,15 +90,12 @@ body {
     top: -38px;
   }
 
-.forecast{
+.forecast, .weather-forecast-day{
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
 }
-.weather-forecast-day{
-    display: flex;
-    justify-content: space-arpund;
-}
+
 .weather-forecast-date{
     text-align: center;
     color: rgba(39, 33, 66, 0.4);
