@@ -1,6 +1,7 @@
 body {
     background: #f9f7fe;
     font-family: "Roboto", sans-serif;
+    background-image: url("https://cdn.coverr.co/videos/coverr-cloudy-sky-2765/thumbnail?width=1920");
   }
   
   a {
@@ -115,6 +116,7 @@ body {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .weather-forecast-temp{
