@@ -96,12 +96,14 @@ body {
   }
 
 .forecast{
+    display: flex;
     position: relative;
     justify-content: space-around;
     margin-top: 30px;
 }
 
 .weather-forecast-date{
+    display: flex;
    position: relative;
    color: rgba(39, 33, 66, 0.4);
     font-size: 16px;
@@ -112,6 +114,7 @@ body {
     width: 70px;
     height: 70px;
     position: relative;
+    display: flex;
 }
 .weather-forecast-temperatures{
     position: relative;
