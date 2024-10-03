@@ -50,7 +50,6 @@ body {
   }
   
   .current-temperature {
-    font-size: 48px;
     display: flex;
   }
   
