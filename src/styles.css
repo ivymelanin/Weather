@@ -51,10 +51,12 @@ body {
   
   .current-temperature {
     font-size: 48px;
+    display: flex;
   }
   
   .current-weather {
     display: flex;
+    justify-content: space-around;
   }
   
   .current-city {
