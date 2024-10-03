@@ -60,7 +60,7 @@ body {
   
   .current-city {
     font-size: 38px;
-    font-weight: 900;
+    line-height: 48px;
     margin: 0;
   }
   .current-details {
@@ -95,23 +95,29 @@ body {
 .forecast{
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
 }
-.weather-forecast-day{
-    position: relative;
+
 }
 .weather-forecast-date{
-    display: flex;
-   color: rgba(39, 33, 66, 0.4);
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 8px;
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 .weather-forecast-icon{
-    width: 70px;
-    height: 70px;
+    width: 88px;
+    height: 88px;
+    display: block;
+    margin: 0 auto;
 }
 .weather-forecast-temperatures{
-    display: flex;
+  text-align: center;
+  color: #f65282;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .weather-forecast-temp{
