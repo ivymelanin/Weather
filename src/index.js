@@ -91,10 +91,10 @@ function getForecast(city) {
           </div>
           <div class="weather-forecast-temp">${Math.round(day.temperature.minimum)}&deg;</div>
         </div>
+    </div>
         `;
     }
-  }
-)
+  });
 let forecastElemennt = document.querySelector("#forecast");
 forecastElemennt.innerHTML = forecastHTML;    
 }
