@@ -106,6 +106,10 @@ body {
   margin-bottom: 10px;
   justify-content: center;
 }
+.weather-forecast-date .weather-forecast-day{
+    text-align: center;
+    justify-content: center;
+}
 .weather-forecast-icon{
     width: 88px;
     height: 88px;
