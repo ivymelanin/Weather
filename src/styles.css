@@ -106,7 +106,7 @@ body {
   margin-bottom: 10px;
   justify-content: center;
 }
-.weather-forecast-date .weather-forecast-day{
+.weather-forecast-day .weather-forecast-date{
     text-align: center;
     justify-content: center;
 }
