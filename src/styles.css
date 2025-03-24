@@ -134,3 +134,30 @@ body {
   
     color: rgba(39, 33, 66, 0.4);
   }
+
+body {
+  font-size: 16px;
+}
+
+/* Styles for screens smaller than 768px (typical tablets and mobiles) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Styles for very small screens (phones below 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .menu {
+    display: block;
+  }
+}
