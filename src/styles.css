@@ -149,6 +149,9 @@ body {
     width: 100%;
     padding: 10px;
   }
+  .forecast{
+      flex-direction: column;
+  }
 }
 
 /* Styles for very small screens (phones below 480px) */
@@ -159,5 +162,8 @@ body {
 
   .menu {
     display: block;
+  }
+    .forecast{
+      flex-direction: column;
   }
 }
